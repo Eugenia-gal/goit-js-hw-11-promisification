@@ -16,12 +16,6 @@ const toggleUserState = (allUsers, userName) => {
 
 const logger = updatedUsers => console.table(updatedUsers);
 
+
+// Вызов функции для проверки
 toggleUserState(users, 'Lux').then(logger);
-
-// const toggleUserState = (allUsers, userName, callback) => {
-//   const updatedUsers = allUsers.map(user =>
-//     user.name === userName ? { ...user, active: !user.active } : user,
-//   );
-
-//   callback(updatedUsers);
-// };
